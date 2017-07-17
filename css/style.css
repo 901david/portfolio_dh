@@ -1,6 +1,6 @@
 #navBar {
   background-color: white;
-  height: 125px;
+  height: 100px;
   border-bottom: 3px solid black;
   opacity: .9;
 }
@@ -20,4 +20,9 @@ body {
 }
 #keySkill {
   padding: 15px;
+}
+#mainNameHeader {
+  letter-spacing: 20px;
+  margin-top: 2%;
+  font-size: 50px;
 }
