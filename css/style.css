@@ -1,0 +1,23 @@
+#navBar {
+  background-color: white;
+  height: 125px;
+  border-bottom: 3px solid black;
+  opacity: .9;
+}
+body {
+  background-image: url("../images/back2.jpg");
+  background-size: cover;
+}
+.boxBackground {
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 2%;
+  opacity: .9;
+}
+.boxBackground img {
+  margin-right: 1%;
+}
+#keySkill {
+  padding: 15px;
+}
