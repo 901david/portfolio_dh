@@ -6,6 +6,7 @@
   top:0;
   z-index: 99999;
 }
+
 body {
   background-image: url("../images/back2.jpg");
   background-size: cover;
@@ -24,7 +25,7 @@ body {
 }
 #mainNameHeader {
   letter-spacing: 34px;
-  font-size: 57px;
+  font-size: 39px;
   text-align: center;
 }
 .textAlign {
@@ -44,4 +45,25 @@ body {
 }
 .mainText {
   font-style: italic;
+}
+#emailFormat {
+  font-size: 18px;
+  letter-spacing: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+.boxBackgroundTwo {
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 2%;
+  opacity: .9;
+  min-height: 150px;
+}
+.contactText {
+  font-size: 20px;
+  font-weight: bold;
+}
+.picRound {
+  border-radius: 5px;
 }
