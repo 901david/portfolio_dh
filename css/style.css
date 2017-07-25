@@ -4,6 +4,11 @@
   border-bottom: 3px solid black;
   opacity: .9;
 }
+#navBar span {
+  margin-top: 1.5%;
+  padding:20px;
+  font-size: 18px;
+}
 body {
   background-image: url("../images/back2.jpg");
   background-size: cover;
