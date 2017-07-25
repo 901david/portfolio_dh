@@ -2,16 +2,14 @@
   background-color: white;
   height: 100px;
   border-bottom: 3px solid black;
-  opacity: .9;
-}
-#navBar span {
-  margin-top: 1.5%;
-  padding:20px;
-  font-size: 18px;
+  position: fixed;
+  top:0;
+  z-index: 99999;
 }
 body {
   background-image: url("../images/back2.jpg");
   background-size: cover;
+  margin-top: 100px;
 }
 .boxBackground {
   background-color: white;
@@ -24,23 +22,26 @@ body {
 .boxBackground img {
   margin-right: 1%;
 }
-#keySkill {
-  padding: 15px;
-}
 #mainNameHeader {
-  letter-spacing: 20px;
-  margin-top: 1%;
-  font-size: 50px;
+  letter-spacing: 34px;
+  font-size: 57px;
+  text-align: center;
 }
 .textAlign {
-  padding:15px;
+  padding:0 15px 15px 15px;
   font-size: 14px;
   font-weight: bold;
 
 }
 #textSideFix {
-  margin-left: 49px;
+  margin-bottom: 25px;
 }
-.mainHolder {
-  margin-top: 2%;
+#mainPortionHolder {
+  margin-top: 5%;
+}
+.center {
+  text-align: center;
+}
+.mainText {
+  font-style: italic;
 }
