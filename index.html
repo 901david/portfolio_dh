@@ -13,6 +13,15 @@
 	<title>David Hammond</title>
 </head>
 <body>
+	<div id="slideOut">
+	<div id="contactInfo">
+	</div>
+		<div id="contactMe">
+		<span class="glyphicon glyphicon-chevron-left contactClick" id="switchHere" data-active="closed"></span>
+	<p class="contactText">Contact Me</p>
+	</div>
+
+	</div>
   <!-- This div contains the nav bar area  -->
   <div class= "col-xs-12 col-sm-12 col-md-12 col-lg-12" id="navBar">
 		<p id="mainNameHeader">David Hammond</p><p id="emailFormat">VDavidHammond@Gmail.com</p>
@@ -21,7 +30,11 @@
   <div class="container-fluid" id="bigScreen">
 		<!--This is the portfolio portion - hidden to start  -->
 		<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-lg-offset-1 boxBackground hide" id="portImages">
-		<h1 id="recentProj">Recent Projects:</h1>
+			<div class="col-lg-8 col-lg-offset-3">
+			<span class='textAlign' id="textSideFix" data-tag="objective">Objective</span><span>|</span><span class='textAlign' data-tag="background">Background</span><span>|</span><span class='textAlign' data-tag="education">Education</span><span>|</span><span class='textAlign' data-tag="portfolio">Portfolio</span>
+
+			</div>
+		<h1 id="recentProj">Applications:</h1>
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-lg-offset-1 boxBackgroundTwo hide" id="contactPort">
 			<p class="contactText center">Contact Me</p>
@@ -42,31 +55,41 @@
 			</div>
 		</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+			<!-- This contains the other text objects fo the screen -->
       <div class="col-xs-12 col-sm-12 col-md-4 col-md-offset-2 col-lg-4 col-lg-offset-2 boxBackground" id="leftSide">
 				<div class="col-lg-8 col-lg-offset-3">
-				<span class='textAlign' id="textSideFix" data-tag="objective">Objective</span><span>|</span><span class='textAlign' data-tag="background">Background</span><span>|</span><span class='textAlign' data-tag="portfolio">Portfolio</span>
+				<span class='textAlign' id="textSideFix" data-tag="objective">Objective</span><span>|</span><span class='textAlign' data-tag="background">Background</span><span>|</span><span class='textAlign' data-tag="education">Education</span><span>|</span><span class='textAlign' data-tag="portfolio">Portfolio</span>
 
 				</div>
 				<div class="mainPortionHolder">
 				<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 mainHolder">
 				<img src="images/headshot_comp.png" class="pull-left img-responsive">
 				</div>
+				<!--Education Section  -->
+				<div class="hide" id="education">
+					<p class="mainTitleText">Education</p>
+					<p class="mainTitleText">Denver University, Denver, Colorado</p>
+					<p class="supportingText">April 2017 - October 2017</p>
+					<p class="supportingText">DU Coding Bootcamp - Javascript Full Stack Web Development</p>
+					<p>An intensive 24-week long boot camp dedicated to designing and building
+					web applications. Skills learned consisted of HTML5, CSS3, Javascript, JQuery,
+					Bootstrap, Firebase, & Node Js.
+					</p>
 
+					<p class="mainTitleText">Final Cut Pro, Apple Certification</p>
+					<p class="supportingText">January 2010</p>
+					<p class="supportingText">Certified by Apple in the Final Cut Pro Application</p>
+					<p>Passed the Apple exam to become Final Cut Pro Certified. Completed the course work on all other programs in the series as well.  In addition, coursework has been completed on Adobe Premiere CS6 (2016) and Adobe Premiere CC (2017) without taking the associated exam.
+					</p>
+
+					<p class="mainTitleText">Rhodes College, Memphis, Tennessee</p>
+					<p class="supportingText">2003-2007</p>
+					<p class="supportingText">B.A. Religious Studies</p>
+					<p>Rhodes is a 4 year Liberal Arts college where I was able to take a very wide range of classes. My major was more ont he philosophical side, Religious Studies. This was an intense major that helps to provoke intense critical thinking by reading an extremely wide range of texts and lot sof writing. This experience has set a solid foundation for life-long learning.
+					</p>
+				</div>
         <p class="mainText" id="objective"> I am a full stack developer with a deep interest in backend.  My diverse background, based in video editing and the legal field, allows me to have a creative, open mind, ye,t be concise and detail-oriented. I am assertive in approaching problems, and can take the lead in any situation, but can also constructively take criticism to improve my performance.  I can handle high-stress environments, while maintaining a cool head and a sense of urgency in my work.  I can play the role of a team member and lead the team, both, in a successful manner.</p>
-				<div class="hide" id="background">
+				<div class="hide background" id="background">
 					<p class="mainTitleText">AB Court Reporting & Video</p>
 					<p class="supportingText">Senior Production Support</p>
 					<p class="supportingText">March 2012 - present</p>
@@ -99,6 +122,11 @@
 					<li>Work with other editors to break up the responsibility of larger projects and
 					make sure all the parts come together into a final project.
 					</li>
+			</ul>
+				<p class="mainTitleText">Additional Work Experience</p>
+				<ul>
+				<li class="supportingText">Freelance Video Editor - 2007-2011, 2016-Present </li>
+				<li class="supportingText">Alford Imaging – Photo Technician, Seasonal - 2010 </li>
 			</ul>
 				</div>
 			</div>

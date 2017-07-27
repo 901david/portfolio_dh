@@ -45,6 +45,7 @@ body {
 }
 .mainText {
   font-style: italic;
+  overflow: hidden;
 }
 #emailFormat {
   font-size: 18px;
@@ -77,6 +78,9 @@ body {
   font-size: 14px;
   font-style: italic;
 }
+#background {
+  overflow:hidden;
+}
 #background li {
   font-size: 10px;
 }
@@ -85,4 +89,38 @@ body {
 }
 #recentProj {
   text-align: center;
+}
+#education {
+  overflow: hidden;
+}
+#contactMe {
+  position: fixed;
+  top: 187px;
+  left:0px;
+  margin:0;
+  padding:10px;
+  width: 50px;
+  height:150px;
+  background-color: orange;
+  border: 5px solid black;
+
+}
+.contactText {
+  position:fixed;
+  top: 261px;
+  left:-27px;
+  font-size:18px;
+  white-space: nowrap;
+  font-weight:bold;
+  transform: rotate(-90deg);
+}
+#contactInfo {
+  position:fixed;
+  top: 190px;
+  left:50px;
+  width:300px;
+  height:450px;
+  background-color: white;
+  display:none;
+  z-index: 99999;
 }
