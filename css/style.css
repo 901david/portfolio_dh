@@ -123,4 +123,5 @@ body {
   background-color: white;
   display:none;
   z-index: 99999;
+  border:5px solid black;
 }
