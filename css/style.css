@@ -34,9 +34,7 @@ body {
   font-weight: bold;
 
 }
-#textSideFix {
-  margin-bottom: 25px;
-}
+
 .mainPortionHolder {
   margin-top: 5%;
 }
@@ -105,14 +103,15 @@ body {
   border: 5px solid black;
 
 }
-.contactText {
+.contactTextSide {
+  transform: rotate(-90deg);
   position:fixed;
-  top: 261px;
-  left:-27px;
+  top: 70px;
+  left:-31px;
   font-size:18px;
   white-space: nowrap;
   font-weight:bold;
-  transform: rotate(-90deg);
+
 }
 #contactInfo {
   position:fixed;
@@ -124,4 +123,12 @@ body {
   display:none;
   z-index: 99999;
   border:5px solid black;
+  text-align: center;
+}
+.clear {
+  clear:both;
+}
+.active {
+  color:gray;
+  text-decoration: underline;
 }
