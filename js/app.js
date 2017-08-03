@@ -23,6 +23,9 @@ function contactBar () {
     }
 };
 $(document).ready(function () {
+  setTimeout(()=>{
+    $("#contactMe").removeClass("hide").addClass("animated slideInLeft");
+  }, 2000);
   $(".contactClick").click(()=>{contactBar();});
   $("#emailFormat").click(()=>{contactBar();});
 $(".textAlign").click(function () {
