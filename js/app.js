@@ -38,7 +38,7 @@ function createAndPushProjects () {
     portfolioProjects.push(centennial, rockPapSciss, trivia, liriNode, flashCardGen, flashCardFun, starWars);
     function populateScreen() {
       for(let i = 0; i < portfolioProjects.length;i++) {
-          $("#portImages").append('<div class="col-xs-10 col-sm-6 col-md-5 col-lg-4 centerMeTimbers"><div class="col-xs-8 col-sm-8 col-md-8 col-lg-12"><p class="portTitle">' +  portfolioProjects[i].title + '</p><img src=' + portfolioProjects[i].imagePath + ' alt="Portfolio Image" class="img-responsive"><p class="portTitle">Click for more info</p></div></div>');
+          $("#portImages").append('<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 centerMeTimbers"><div class="col-xs-10 col-sm-10 col-md-10 col-lg-12 borderBox"><p class="portTitle">' +  portfolioProjects[i].title + '</p><img src=' + portfolioProjects[i].imagePath + ' alt="Portfolio Image" class="img-responsive portImageGroup"><p class="portTitle">Click for more info</p></div></div>');
           // portfolioProjects[i].gitLink
           // portfolioProjects[i].gitSite
           // portfolioProjects[i].description

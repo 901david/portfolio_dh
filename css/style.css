@@ -5,6 +5,8 @@
   position: fixed;
   top:0;
   z-index: 99999;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 body {
@@ -100,7 +102,7 @@ body {
   width: 50px;
   height:150px;
   background-color: white;
-  /*opacity: 0.9;*/
+  z-index: 999999999;
   border: 5px solid black;
 
 }
@@ -144,10 +146,37 @@ body {
   margin-top: 20%;
 }
 .centerMeTimbers {
-  margin-left: 11%;
+  margin-bottom: 2%;
+  display: flex;
+  justify-content: space-around;
+
+}
+.borderBox {
+  border:1px solid lightgray;
 }
 .portTitle {
   font-weight: bold;
   font-size: 14px;
   text-align: center;
+}
+.portImageGroup {
+  max-height: 100px;
+
+}
+#contactPort {
+  margin-left: 4%;
+}
+@media screen and (max-width: 762px) {
+
+#mainNameHeader {
+  font-size: 25px;
+}
+}
+@media screen and (max-width: 622px) {
+
+#mainNameHeader {
+  white-space: normal;
+  font-size: 18px;
+  letter-spacing: 18px;
+}
 }
