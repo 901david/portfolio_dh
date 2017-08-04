@@ -133,7 +133,6 @@ body {
 }
 .active {
   color:gray;
-  text-decoration: underline;
 }
 .spacerContact {
   padding-top: 15px;
@@ -165,6 +164,9 @@ body {
 }
 #contactPort {
   margin-left: 4%;
+}
+.popover {
+  width:100%;
 }
 @media screen and (max-width: 762px) {
 
