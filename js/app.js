@@ -40,7 +40,7 @@ function createAndPushProjects () {
 
       for(let i = 0; i < portfolioProjects.length;i++) {
 
-          $("#portImages").append('<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 centerMeTimbers" data-toggle="popover" title="<b>' + portfolioProjects[i].title + '</b>" data-content="' + portfolioProjects[i].description + '<b><p>Technologies Used:</b> ' +  portfolioProjects[i].technology + '"><div class="col-xs-10 col-sm-10 col-md-10 col-lg-12 borderBox"><b>' +  portfolioProjects[i].title + '</b></p><img src="' + portfolioProjects[i].imagePath + '" alt="Portfolio Image" class="img-responsive portImageGroup"><br/><a href="' + portfolioProjects[i].gitLink + '" target="_blank">GitHub Repo</a><br/><a href="' + portfolioProjects[i].gitSite + '" target="_blank">Application</a></div></div>');
+          $("#portImages").append('<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 centerMeTimbers" data-toggle="popover" title="<b>' + portfolioProjects[i].title + '</b>" data-content="' + portfolioProjects[i].description + '<b><p>Technologies Used:</b> ' +  portfolioProjects[i].technology + '"><div class="col-xs-10 col-sm-10 col-md-12 col-lg-12 borderBox"><b>' +  portfolioProjects[i].title + '</b></p><img src="' + portfolioProjects[i].imagePath + '" alt="Portfolio Image" class="img-responsive portImageGroup"><br/><a href="' + portfolioProjects[i].gitLink + '" target="_blank">GitHub Repo</a><br/><a href="' + portfolioProjects[i].gitSite + '" target="_blank">Application</a></div></div>');
 
       }
     };

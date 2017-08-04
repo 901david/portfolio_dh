@@ -151,7 +151,9 @@ body {
 
 }
 .borderBox {
-  border:1px solid lightgray;
+  /*border:1px solid lightgray;*/
+  margin-left: 19%;
+  text-align: center;
 }
 .portTitle {
   font-weight: bold;
@@ -160,7 +162,8 @@ body {
 }
 .portImageGroup {
   max-height: 100px;
-
+  border: 1px solid black;
+  margin-left: 17%;
 }
 #contactPort {
   margin-left: 4%;
