@@ -36,23 +36,14 @@ function createAndPushProjects () {
     let liriNode = new BuildPortfolio("'LIRI' - Node Application", "images/portimages/lirinode.png", "https://github.com/901david/liri-node-app", "https://github.com/901david/liri-node-app", );
 
     portfolioProjects.push(centennial, rockPapSciss, trivia, liriNode, flashCardGen, flashCardFun, starWars);
-    function populateScreen() {
+};
+function populateScreen() {
 
-      for(let i = 0; i < portfolioProjects.length;i++) {
-            titleId = portfolioProjects[i].title.replace(/ /g, "").replace(/'/g, "").replace(/-/g, "");
-          $("#portImages").append('<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 centerMeTimbers"><div class="col-xs-10 col-sm-10 col-md-12 col-lg-12 borderBox"><p id="' + titleId + '"><b>' +  portfolioProjects[i].title + '</b></p><img src="' + portfolioProjects[i].imagePath + '" alt="Portfolio Image" class="img-responsive portImageGroup" data-toggle="popover" title="<b>' + portfolioProjects[i].title + '</b>" data-content="' + portfolioProjects[i].description + '<b><p>Technologies Used:</b> ' +  portfolioProjects[i].technology + '"><br/><a class="textAlignPort" href="' + portfolioProjects[i].gitLink + '" target="_blank">GitHub Repo</a><span> | </span><a href="' + portfolioProjects[i].gitSite + '" target="_blank">Application</a></div></div>');
+  for(let i = 0; i < portfolioProjects.length;i++) {
+        titleId = portfolioProjects[i].title.replace(/ /g, "").replace(/'/g, "").replace(/-/g, "");
+      $("#portImages").append('<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 centerMeTimbers"><div class="col-xs-10 col-sm-10 col-md-12 col-lg-12 borderBox"><p id="' + titleId + '"><b>' +  portfolioProjects[i].title + '</b></p><img src="' + portfolioProjects[i].imagePath + '" alt="Portfolio Image" class="img-responsive portImageGroup" data-toggle="popover" title="<b>' + portfolioProjects[i].title + '</b>" data-content="' + portfolioProjects[i].description + '<b><p>Technologies Used:</b> ' +  portfolioProjects[i].technology + '"><br/><a class="textAlignPort" href="' + portfolioProjects[i].gitLink + '" target="_blank">GitHub Repo</a><span> | </span><a href="' + portfolioProjects[i].gitSite + '" target="_blank">Application</a></div></div>');
 
-      }
-    };
-    populateScreen();
-  $("[data-toggle=popover]").popover({
-    container: 'body',
-    trigger:'hover',
-    animation: true,
-    placement: 'auto left right',
-    html: true,
-    width: '100%'
-  });
+  }
 };
 // This will be a constructor function that will build up my portfolio pieces.
 function BuildPortfolio (projectTitle, image, githublink, liveSite, description, technology) {
@@ -64,7 +55,15 @@ function BuildPortfolio (projectTitle, image, githublink, liveSite, description,
   this.technology = technology;
 };
 $(document).ready(function () {
-
+createAndPushProjects();
+$("[data-toggle=popover]").popover({
+  container: 'body',
+  trigger:'hover',
+  animation: true,
+  placement: 'auto left right',
+  html: true,
+  width: '100%'
+});
   setTimeout(()=>{
     $("#contactMe").removeClass("hide").addClass("animated slideInLeft");
   }, 2000);
@@ -105,7 +104,7 @@ $(".textAlign").click(function () {
     $("#portImages").removeClass("hide");
     $("#portfolioButt").addClass("active");
     $("#contactPort").removeClass("hide");
-    createAndPushProjects();
+    populateScreen();
   }
   else if (dataVal === "education") {
     $("#educationButt").addClass("active");
