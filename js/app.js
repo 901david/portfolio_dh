@@ -39,17 +39,17 @@ function createAndPushProjects () {
     function populateScreen() {
 
       for(let i = 0; i < portfolioProjects.length;i++) {
-
-          $("#portImages").append('<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 centerMeTimbers"><div class="col-xs-10 col-sm-10 col-md-12 col-lg-12 borderBox"><p class="textAlignPort"><b>' +  portfolioProjects[i].title + '</b></p><img src="' + portfolioProjects[i].imagePath + '" alt="Portfolio Image" class="img-responsive portImageGroup" data-toggle="popover" title="<b>' + portfolioProjects[i].title + '</b>" data-content="' + portfolioProjects[i].description + '<b><p>Technologies Used:</b> ' +  portfolioProjects[i].technology + '"><br/><a class="textAlignPort" href="' + portfolioProjects[i].gitLink + '" target="_blank">GitHub Repo</a><span> | </span><a href="' + portfolioProjects[i].gitSite + '" target="_blank">Application</a></div></div>');
+            titleId = portfolioProjects[i].title.replace(/ /g, "").replace(/'/g, "").replace(/-/g, "");
+          $("#portImages").append('<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 centerMeTimbers"><div class="col-xs-10 col-sm-10 col-md-12 col-lg-12 borderBox"><p id="' + titleId + '"><b>' +  portfolioProjects[i].title + '</b></p><img src="' + portfolioProjects[i].imagePath + '" alt="Portfolio Image" class="img-responsive portImageGroup" data-toggle="popover" title="<b>' + portfolioProjects[i].title + '</b>" data-content="' + portfolioProjects[i].description + '<b><p>Technologies Used:</b> ' +  portfolioProjects[i].technology + '"><br/><a class="textAlignPort" href="' + portfolioProjects[i].gitLink + '" target="_blank">GitHub Repo</a><span> | </span><a href="' + portfolioProjects[i].gitSite + '" target="_blank">Application</a></div></div>');
 
       }
     };
     populateScreen();
   $("[data-toggle=popover]").popover({
-    container: "body",
+    container: 'body',
     trigger:'hover',
     animation: true,
-    placement: 'bottom',
+    placement: 'auto left right',
     html: true,
     width: '100%'
   });
@@ -98,6 +98,7 @@ $(".textAlign").click(function () {
     $("#background").removeClass("hide");
   }
   else if (dataVal === "portfolio") {
+    $("#portImages").empty();
     $("#leftSide").addClass("hide");
     $("#rightSide").addClass("hide");
     $("#bottomSide").addClass("hide");
