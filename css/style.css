@@ -140,11 +140,9 @@ body {
 }
 .centerMeTimbers {
   margin-bottom: 2%;
-  border:1px solid black;
-
 }
 .borderBox {
-  margin-left: 19%;
+  margin-left: 2%;
 }
 .portTitle {
   font-weight: bold;
@@ -152,9 +150,12 @@ body {
   text-align: center;
 }
 .portImageGroup {
-  max-height: 100px;
   border: 1px solid black;
-  margin-left: 17%;
+
+  max-height: 200px;
+}
+.textAlignPort {
+  margin-left: 15%;
 }
 .popover {
   width:100%;
@@ -165,24 +166,26 @@ body {
 .hideForNow {
   display:hidden;
 }
-
+#TheCentennialCharge {
+  margin-left: 16%;
+}
 #RockPaperScissorsMultiplayer {
-  margin-left: 1%;
+  margin-left: 10%;
 }
 #TheOfficeTriviaGame {
-  margin-left: 1%;
+  margin-left: 17%;
 }
 #LIRINodeApplication {
-  margin-left: 1%;
+  margin-left: 15%;
 }
 #FlashCardGenerator {
-  margin-left: 1%;
+  margin-left: 17%;
 }
 #FlashCardFun {
-  margin-left: 1%;
+  margin-left: 21%;
 }
 #StarWarsBattle {
-  margin-left: 1%;
+  margin-left: 19%;
 }
 #fixNavBar {
   text-align: center;
