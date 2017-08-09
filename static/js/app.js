@@ -73,6 +73,7 @@ $(".textAlign").click(function () {
   $(".textAlign").removeClass("active");
   let dataVal = $(this).attr("data-tag");
   if (dataVal === "objective") {
+    $("#mainContentHeader").text("Objective");
     $("#objectiveButt").addClass("active");
     $("#background").addClass("hide");
     $("#portImages").addClass("hide");
@@ -86,6 +87,7 @@ $(".textAlign").click(function () {
     // ad din portfolio stuff
   }
   else if (dataVal === "background") {
+    $("#mainContentHeader").text("Background");
     $("#backgroundButt").addClass("active");
     $("#objective").addClass("hide");
     $("#portImages").addClass("hide");
@@ -107,6 +109,7 @@ $(".textAlign").click(function () {
     populateScreen();
   }
   else if (dataVal === "education") {
+    $("#mainContentHeader").text("Education");
     $("#educationButt").addClass("active");
     $("#objective").addClass("hide");
     $("#portImages").addClass("hide");

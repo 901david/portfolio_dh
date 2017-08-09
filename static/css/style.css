@@ -36,7 +36,13 @@ body {
   font-size: 14px;
   font-weight: bold;
 }
-
+.mainContentHeader {
+  font-size: 20px;
+  font-weight: bold;
+}
+#mainContentHeaderHolder {
+text-align: center;
+}
 .mainPortionHolder {
   margin-top: 5%;
 }
@@ -71,7 +77,7 @@ body {
 .mainTitleText {
   font-weight: bold;
   font-size: 14px;
-  white-space: nowrap;
+  /*white-space: nowrap;*/
 }
 .supportingText {
   font-size: 14px;
@@ -81,8 +87,9 @@ body {
 #background li {
   font-size: 10px;
 }
-#background ul {
+ul {
   list-style-type: disc;
+  margin-left: 2%;
 }
 #recentProj {
   text-align: center;
