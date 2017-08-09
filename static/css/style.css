@@ -197,6 +197,9 @@ ul {
 #fixNavBar {
   text-align: center;
 }
+.padderFix {
+padding: 0;
+}
 @media screen and (max-width: 991px) {
 .hideForNow {
   display:block;
@@ -206,6 +209,12 @@ ul {
   min-height: 150px;
 }
 }
+@media screen and (max-width: 768px) {
+
+#bottomSide img {
+  margin-bottom: 25%;
+}
+
 @media screen and (max-width: 762px) {
 
 #mainNameHeader {
