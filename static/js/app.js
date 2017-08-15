@@ -21,7 +21,7 @@ function createAndPushProjects () {
     let rockPapSciss = new BuildPortfolio("Rock Paper Scissors - Multiplayer", "images/portimages/RPS.png", "https://github.com/901david/RPS-Multiplayer", "https://901david.github.io/RPS-Multiplayer/", "This web application is a basic rock, paper, scissors game that uses Firebase to allow to users to play each other. It also has a chat feature to it which allows users to chat with each other while battling it out.", "Html, Css, JQuery, Javascript, Firebase");
     let liriNode = new BuildPortfolio("'LIRI' - Node Application", "images/portimages/lirinode.png", "https://github.com/901david/liri-node-app", "https://github.com/901david/liri-node-app", "This is a node application that is a language knock off of the popular SIRI.  LIRI takes commands as well through the terminal. Send tweets, look up sounds through spotify and search for movies. This is a fun application that shows you how easily node will integrate with API's to create a fun application", "Node, Javascript, Ajax, Twitter npm, Spotify npm" );
 
-    portfolioProjects.push(centennial, rockPapSciss, liriNode, bamazon, flashCardFun, starWars);
+    portfolioProjects.push(centennial, rockPapSciss, liriNode, flashCardFun,starWars, bamazon);
 };
 // This controls the contact me pop out
 function contactBar () {
